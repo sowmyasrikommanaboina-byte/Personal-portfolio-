@@ -1,1 +1,3 @@
-console.log("Welcome to my personal portfolio!");
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Portfolio loaded successfully!");
+});
