@@ -1,23 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My To-Do List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pricing Cards</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="container">
-        <h1>My To-Do List</h1>
-
-        <div class="input-box">
-            <input type="text" id="taskInput" placeholder="Enter a task">
-            <button id="addBtn">Add</button>
+    <div class="pricing-container">
+        <h2>Our Pricing Plans</h2>
+        
+        <!-- Toggle Switch Section -->
+        <div class="toggle-container">
+            <span>Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="billing-toggle">
+                <span class="slider"></span>
+            </label>
+            <span>Yearly</span>
         </div>
 
-        <ul id="taskList"></ul>
+        <!-- Pricing Cards Section -->
+        <div class="cards-wrapper">
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>Basic</h3>
+                <div class="price-box">
+                    <span class="price monthly-price">$19/mo</span>
+                    <span class="price yearly-price hidden">$190/yr</span>
+                </div>
+                <p>Perfect for beginners</p>
+                <button>Sign Up</button>
+            </div>
+
+            <!-- Card 2 (Featured Card with Badge Ribbon) -->
+            <div class="card featured">
+                <span class="badge">Popular</span>
+                <h3>Pro</h3>
+                <div class="price-box">
+                    <span class="price monthly-price">$49/mo</span>
+                    <span class="price yearly-price hidden">$490/yr</span>
+                </div>
+                <p>Best for growing businesses</p>
+                <button>Sign Up</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <h3>Enterprise</h3>
+                <div class="price-box">
+                    <span class="price monthly-price">$99/mo</span>
+                    <span class="price yearly-price hidden">$990/yr</span>
+                </div>
+                <p>For large scale operations</p>
+                <button>Sign Up</button>
+            </div>
+        </div>
     </div>
 
+    <!-- JavaScript File Connection -->
     <script src="script.js"></script>
 </body>
-</html>
+    </html>
+                    
