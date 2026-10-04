@@ -3,64 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Pricing Cards</title>
+    <title>Live Weather Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="pricing-container">
-        <h2>Our Pricing Plans</h2>
+    <div class="weather-box">
+        <h2>Weather Dashboard</h2>
         
-        <!-- Toggle Switch Section -->
-        <div class="toggle-container">
-            <span>Monthly</span>
-            <label class="switch">
-                <input type="checkbox" id="billing-toggle">
-                <span class="slider"></span>
-            </label>
-            <span>Yearly</span>
+        <!-- Search Bar Section -->
+        <div class="search-form">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
         </div>
 
-        <!-- Pricing Cards Section -->
-        <div class="cards-wrapper">
-            <!-- Card 1 -->
-            <div class="card">
-                <h3>Basic</h3>
-                <div class="price-box">
-                    <span class="price monthly-price">$19/mo</span>
-                    <span class="price yearly-price hidden">$190/yr</span>
-                </div>
-                <p>Perfect for beginners</p>
-                <button>Sign Up</button>
-            </div>
+        <!-- Error Message Container -->
+        <p id="error-msg" class="error hidden"></p>
 
-            <!-- Card 2 (Featured Card with Badge Ribbon) -->
-            <div class="card featured">
-                <span class="badge">Popular</span>
-                <h3>Pro</h3>
-                <div class="price-box">
-                    <span class="price monthly-price">$49/mo</span>
-                    <span class="price yearly-price hidden">$490/yr</span>
-                </div>
-                <p>Best for growing businesses</p>
-                <button>Sign Up</button>
+        <!-- Weather Display Result (Dynamic DOM) -->
+        <div id="weather-result" class="result-container hidden">
+            <h3 id="city-name">City Name</h3>
+            <div class="temp-display">
+                <span id="temperature">--</span>°C
             </div>
-
-            <!-- Card 3 -->
-            <div class="card">
-                <h3>Enterprise</h3>
-                <div class="price-box">
-                    <span class="price monthly-price">$99/mo</span>
-                    <span class="price yearly-price hidden">$990/yr</span>
-                </div>
-                <p>For large scale operations</p>
-                <button>Sign Up</button>
-            </div>
+            <p id="weather-desc">Condition</p>
+            <p>Humidity: <span id="humidity">--</span>%</p>
         </div>
     </div>
 
-    <!-- JavaScript File Connection -->
     <script src="script.js"></script>
 </body>
-    </html>
-                    
+</html>
+
